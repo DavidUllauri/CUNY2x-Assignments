@@ -1,0 +1,28 @@
+.ContactCard {
+  margin: 8px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  width: fit-content;
+}
+
+.cc-profile {
+  width: 20px;
+  height: 20px;
+}
+
+.cc-name {
+  font-size: 24px;
+  font-weight: bolder;
+      margin-left: 16px;
+}
+
+.contact-info {
+  display: flex;
+}
+
+.contact-l {
+  width: fit-content;
+}
+.contact-r {
+  margin-left: 8px;
+}
