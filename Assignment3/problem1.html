@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body class="center">
+    <h1 class="qTitle">Problem 1</h1>
+
+    <div class="wraper button1">
+      <button onclick="text1()" type="button" name="button">Button 1</button>
+      <p id="text1"></p>
+    </div>
+
+    <div class="wraper button2">
+      <button onclick="text2()" type="button" name="button">Button 2</button>
+      <p id="text2"></p>
+    </div>
+
+    <script>
+      function text1() {
+        document.getElementById("text1").innerHTML = "I'm right";
+      }
+      function text2() {
+        document.getElementById("text2").innerHTML = "No, I'm right!"
+      }
+    </script>
+
+  </body>
+</html>

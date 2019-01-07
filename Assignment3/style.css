@@ -1,0 +1,28 @@
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+.qTitle {
+  color: darkgrey;
+  margin-bottom: 30px;
+}
+
+.fit {
+  width: fit-content;
+}
+
+.form-wrapper {
+  margin: auto;
+}
+
+input[type="text"], input[type="password"] {
+    display: block;
+    width: 400px;
+    max-width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
