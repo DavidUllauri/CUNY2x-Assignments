@@ -3,23 +3,29 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      number: 4,
+      show: true
+    };
+  }
+
+  Decrement = () => {
+    if ((this.state.number - 1) < 0){
+      alert("cant go below 0");
+    }
+    else {
+      this.setState({ number: this.state.number - 1 });
+    }
+
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        { this.state.show ? <h2>{ this.state.number }</h2> : '' }
+        <button onClick={this.Decrement}>Decrement</button>
       </div>
     );
   }
