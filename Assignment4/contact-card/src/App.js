@@ -24,6 +24,7 @@ function ContactCard(props) {
   </div>
   );
 }
+
 function App() {
   return (
     <div>
